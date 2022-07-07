@@ -1,4 +1,5 @@
 import Head from "../../node_modules/next/head"
+import Link from '../../node_modules/next/link'
 import styles from "../../styles/home.module.scss"
 import logo from '../../public/images/logo.svg'
 import Image from "../../node_modules/next/image"
@@ -30,8 +31,9 @@ export default function Home() {
                 Acessar 
               </Button>
             </form>
-
-            <a className={styles.text} href="#">Não possuí uma conta? Cadastre-se</a>
+            <Link href="/signup">
+              <a className={styles.text} href="#">Não possuí uma conta? Cadastre-se</a>
+            </Link>
           </div>
         </div>
       </>
